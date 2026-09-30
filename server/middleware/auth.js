@@ -34,6 +34,17 @@ function getTokenFromRequest(req) {
 async function authenticate(req, res, next) {
   try {
     const token = getTokenFromRequest(req);
+    console.log("========== AUTH DEBUG ==========");
+    console.log("Request URL:", req.originalUrl);
+    console.log("Request method:", req.method);
+    console.log("Origin:", req.headers.origin);
+    console.log("Cookie:", req.headers.cookie);
+    console.log("Authorization:", req.headers.authorization);
+
+    const token = getTokenFromRequest(req);
+
+    console.log("Token exists:", !!token);
+    console.log("================================");
 
     if (!token) {
       const error = new Error("Authentication required.");
