@@ -34,7 +34,6 @@ function getTokenFromRequest(req) {
 async function authenticate(req, res, next) {
   try {
     const token = getTokenFromRequest(req);
-
     if (!token) {
       const error = new Error("Authentication required.");
       error.statusCode = 401;
