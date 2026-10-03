@@ -618,78 +618,6 @@ The complete CivicFix workflow has been tested end-to-end, including:
 
 ---
 
-## 20. Demo Flow
-
-For a hackathon demonstration, the recommended flow is:
-
-### Step 1 — Citizen 1
-
-Submit a civic complaint with:
-
-- Photo
-- Location
-- Description
-
-Show the AI-generated analysis and Master Issue.
-
-### Step 2 — Citizen 2
-
-Submit another complaint describing the same real-world problem from the same area.
-
-Show that CivicFix AI identifies it as the same issue and links it to the existing Master Issue.
-
-### Step 3 — Admin
-
-Open the Admin dashboard and demonstrate:
-
-```text
-REPORTED
-    ↓
-IN_PROGRESS
-    ↓
-FIXED
-```
-
-Show the total and active report counts.
-
-### Step 4 — Citizen Verification
-
-Citizen 1 verifies that the issue is fixed.
-
-Show:
-
-```text
-Complaint 1 → CLOSED
-```
-
-while another active linked complaint remains unresolved.
-
-### Step 5 — Reopening
-
-Citizen 2 reports that the problem still exists.
-
-Show:
-
-```text
-Complaint 2 → REOPENED
-Master Issue → REOPENED
-```
-
-### Step 6 — Final Resolution
-
-Admin resolves the issue again and Citizen 2 confirms it is fixed.
-
-Show:
-
-```text
-All complaints → CLOSED
-Master Issue → CLOSED
-```
-
-This demonstrates the complete CivicFix workflow.
-
----
-
 ## 21. Challenges Addressed
 
 ### Duplicate Reports
@@ -746,7 +674,6 @@ Through CivicFix AI, the project demonstrates practical integration of:
 
 Potential future improvements include:
 
-- Live deployment
 - Interactive civic issue maps
 - Real-time administrator notifications
 - Advanced geospatial duplicate detection
